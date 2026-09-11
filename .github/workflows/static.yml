@@ -33,6 +33,11 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      # Internal working documents live in the repo but must not be served
+      # from the public site. This deletes them from the CI checkout only,
+      # so the files remain in version control.
+      - name: Exclude internal documents from the published site
+        run: rm -f prompt.md PLAN.md README.md
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:

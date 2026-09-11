@@ -1,119 +1,698 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="NextGen Consultants — technology consulting for cloud, data and digital transformation." />
-  <title>NextGen Consultants</title>
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%233b5bfd'/%3E%3Ctext x='16' y='21' font-family='Segoe UI,Arial,sans-serif' font-size='13' font-weight='700' fill='%23fff' text-anchor='middle'%3ENG%3C/text%3E%3C/svg%3E" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>NextGen Consultants — Microsoft Power Platform, SharePoint &amp; AI Consulting</title>
+<meta name="description" content="Microsoft technology consulting, development, training and mentoring. Power Platform, SharePoint Online, Microsoft 365, Azure, SPFx, React and AI solutions for organisations and professionals." />
+<link rel="canonical" href="https://nextgenconsultants.github.io/" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://nextgenconsultants.github.io/" />
+<meta property="og:title" content="NextGen Consultants — Microsoft Power Platform, SharePoint &amp; AI Consulting" />
+<meta property="og:description" content="Consulting, development, training and support for the Microsoft Cloud. Power Platform, SharePoint Online, Microsoft 365, Azure, SPFx, React and AI." />
+<meta property="og:site_name" content="NextGen Consultants" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="NextGen Consultants — Microsoft Technology Consulting" />
+<meta name="twitter:description" content="Consulting, development, training and support for the Microsoft Cloud." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f3d91'/%3E%3Ctext x='16' y='21' font-family='Segoe UI,Arial,sans-serif' font-size='12' font-weight='700' fill='%23fff' text-anchor='middle'%3ENG%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/site.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "NextGen Consultants",
+  "url": "https://nextgenconsultants.github.io/",
+  "description": "Microsoft technology consulting, development, training, mentoring and professional support. Power Platform, SharePoint Online, Microsoft 365, Azure, SPFx, React and AI.",
+  "slogan": "Transforming Ideas into Intelligent Microsoft Solutions",
+  "knowsAbout": [
+    "Microsoft Power Platform", "Power Apps", "Power Automate", "Dataverse",
+    "Power Pages", "Power BI", "Copilot Studio", "SharePoint Online",
+    "Microsoft 365", "SharePoint Framework", "React", "TypeScript",
+    "Microsoft Graph", "Azure", "Artificial Intelligence", "Governance"
+  ]
+}
+</script>
 </head>
+
 <body>
-  <header class="site-header">
-    <nav class="nav" aria-label="Main">
-      <a class="brand" href="#top">
-        <span class="brand-mark" aria-hidden="true">NG</span>
-        <span class="brand-name">NextGen Consultants</span>
-      </a>
+<a class="skip-link" href="#main">Skip to main content</a>
 
-      <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="navMenu">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="bars" aria-hidden="true"></span>
-      </button>
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">NG</span>
+      <span>NextGen Consultants</span>
+    </a>
 
-      <ul class="nav-menu" id="navMenu">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#work">Impact</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li>
-          <button class="theme-toggle" id="themeToggle" aria-label="Switch to dark theme">
-            <span id="themeIcon" aria-hidden="true">&#9789;</span>
-          </button>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+      <span class="sr-only">Toggle navigation menu</span>
+      <span class="bars" aria-hidden="true"></span>
+    </button>
 
-  <main id="top">
-    <section class="hero">
-      <div class="container hero-inner">
-        <p class="eyebrow">Cloud &middot; Data &middot; Digital</p>
-        <h1>We build the systems your next decade runs on.</h1>
-        <p class="lede">
-          NextGen Consultants helps enterprises modernise legacy platforms, unlock their data,
-          and ship software that holds up under real load.
+    <ul class="nav-menu" id="navMenu">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="services.html">Services</a></li>
+      <li><a class="nav-link" href="training.html">Training</a></li>
+      <li><a class="nav-link" href="job-support.html">Job Support</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#book">Book a Consultation</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- ============================ 1. Hero ============================ -->
+  <section class="hero">
+    <div class="container hero-grid">
+      <div>
+        <span class="eyebrow">Consulting · Development · Training · Support</span>
+        <h1>Build Smarter Business Solutions with Microsoft Technologies</h1>
+        <p class="hero-lede">
+          NextGen Consultants helps organizations and professionals design, build, govern, and
+          support modern solutions using Power Platform, SharePoint Online, Microsoft 365, Azure,
+          React, SPFx, PnP, and AI.
         </p>
-        <div class="cta-row">
-          <a class="btn btn-primary" href="#contact">Start a conversation</a>
-          <a class="btn btn-ghost" href="#services">See what we do</a>
+
+        <div class="btn-row">
+          <a class="btn btn-primary" href="contact.html#book">Book a Free Discovery Call</a>
+          <a class="btn btn-outline" href="services.html">Explore Our Services</a>
         </div>
 
-        <dl class="stats">
-          <div class="stat"><dt>Projects delivered</dt><dd data-count-to="140">0</dd></div>
-          <div class="stat"><dt>Consultants</dt><dd data-count-to="35">0</dd></div>
-          <div class="stat"><dt>Client retention %</dt><dd data-count-to="96">0</dd></div>
-        </dl>
-      </div>
-    </section>
-
-    <section class="section" id="services">
-      <div class="container">
-        <h2>What we do</h2>
-        <p class="section-sub">Four practices, one delivery team.</p>
-        <div class="card-grid" id="serviceGrid"><!-- rendered by script.js --></div>
-      </div>
-    </section>
-
-    <section class="section section-alt" id="work">
-      <div class="container">
-        <h2>Selected impact</h2>
-        <p class="section-sub">A sample of outcomes from recent engagements.</p>
-        <ul class="impact-list">
-          <li><strong>62% faster releases</strong> for a national insurer after a CI/CD and test-automation overhaul.</li>
-          <li><strong>$1.8M annual savings</strong> from right-sizing a multi-account AWS estate.</li>
-          <li><strong>Single customer view</strong> across 11 source systems for a retail group, live in 14 weeks.</li>
+        <ul class="hero-points">
+          <li>Architecture-led delivery</li>
+          <li>Low-code and pro-code</li>
+          <li>Training and mentoring</li>
+          <li>India and global</li>
         </ul>
       </div>
-    </section>
 
-    <section class="section" id="contact">
-      <div class="container narrow">
-        <h2>Get in touch</h2>
-        <p class="section-sub">Tell us what you are trying to build. We reply within two business days.</p>
-
-        <form class="contact-form" id="contactForm" novalidate>
-          <div class="field">
-            <label for="name">Name</label>
-            <input type="text" id="name" name="name" required autocomplete="name" />
-            <p class="error" data-error-for="name"></p>
+      <!-- Technology stack visual: Power Platform, SharePoint, Azure and AI
+           working together. Built from CSS and inline SVG, so it costs no
+           image weight and stays sharp at every size. -->
+      <div class="hero-visual">
+        <div class="hero-visual-row">
+          <div class="tile tile-power">
+            <span class="tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg>
+            </span>
+            <span>Power Platform</span>
           </div>
-
-          <div class="field">
-            <label for="email">Work email</label>
-            <input type="email" id="email" name="email" required autocomplete="email" />
-            <p class="error" data-error-for="email"></p>
+          <div class="tile tile-sp">
+            <span class="tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg>
+            </span>
+            <span>SharePoint &amp; M365</span>
           </div>
-
-          <div class="field">
-            <label for="message">How can we help?</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-            <p class="error" data-error-for="message"></p>
+          <div class="tile tile-azure">
+            <span class="tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97 6 6 0 0 0-11.6-1.4A4 4 0 0 0 6.5 19Z"/></svg>
+            </span>
+            <span>Azure Integration</span>
           </div>
-
-          <button type="submit" class="btn btn-primary">Send enquiry</button>
-          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
-        </form>
+          <div class="tile tile-ai">
+            <span class="tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/><path d="M18 16.5 18.8 19l2.2.8-2.2.8L18 23l-.8-2.4-2.2-.8 2.2-.8Z"/></svg>
+            </span>
+            <span>AI &amp; Copilot</span>
+          </div>
+          <div class="tile tile-wide">
+            <span class="tile-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M3 12h18"/><circle cx="12" cy="12" r="9"/></svg>
+            </span>
+            <span>One governed solution platform</span>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <div class="container footer-inner">
-      <p>&copy; <span id="year">2026</span> NextGen Consultants. All rights reserved.</p>
-      <p class="muted">Built as a static site and deployed with GitHub Pages.</p>
     </div>
-  </footer>
+  </section>
 
-  <script src="script.js"></script>
+  <!-- ==================== 2. Trust and capability ==================== -->
+  <section class="section section-tight section-alt">
+    <div class="container">
+      <div class="grid grid-3">
+        <div class="list-card reveal">
+          <h3>How we work</h3>
+          <ul>
+            <li>Microsoft-focused technology consulting</li>
+            <li>Architecture-led solution delivery</li>
+            <li>Low-code and pro-code capabilities</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>What we cover</h3>
+          <ul>
+            <li>Consulting and implementation</li>
+            <li>Training and mentoring</li>
+            <li>Support across the solution lifecycle</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>How we engage</h3>
+          <ul>
+            <li>Flexible engagement models</li>
+            <li>Fixed scope, retainer or advisory</li>
+            <li>Knowledge transfer built in</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======================== 3. Core services ======================== -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">What we do</span>
+        <h2>Consulting, development and enablement across the Microsoft Cloud</h2>
+        <p>From a single Power App to a governed enterprise platform — designed, built and handed over so your team can run it.</p>
+      </div>
+
+      <div class="grid grid-3">
+
+        <article class="card reveal">
+          <span class="card-icon v-violet" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7" rx="1.5"/><rect x="14" y="3" width="7" height="7" rx="1.5"/><rect x="3" y="14" width="7" height="7" rx="1.5"/><rect x="14" y="14" width="7" height="7" rx="1.5"/></svg></span>
+          <h3>Power Platform Consulting</h3>
+          <p>Platform strategy, environment design and solution architecture across Power Apps, Automate, Dataverse and Power BI.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> a platform that scales without becoming unmanageable.</p>
+          <a class="card-link" href="services.html#advisory">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-violet" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="3" width="16" height="18" rx="2"/><path d="M8 8h8M8 12h8M8 16h5"/></svg></span>
+          <h3>Power Apps Development</h3>
+          <p>Canvas and model-driven applications built around real business processes, not around a demo.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> replace spreadsheets and manual handoffs with one place to work.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-violet" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 3v6a3 3 0 0 0 3 3h6a3 3 0 0 1 3 3v6"/><circle cx="6" cy="3" r="1.6"/><circle cx="18" cy="21" r="1.6"/></svg></span>
+          <h3>Power Automate &amp; Process Automation</h3>
+          <p>Cloud flows, approvals, business process flows and desktop automation for repetitive work.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> fewer manual steps and a clear audit trail.</p>
+          <a class="card-link" href="services.html#automation">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-violet" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5.5" rx="8" ry="3"/><path d="M4 5.5v13c0 1.7 3.6 3 8 3s8-1.3 8-3v-13"/><path d="M4 12c0 1.7 3.6 3 8 3s8-1.3 8-3"/></svg></span>
+          <h3>Dataverse Solutions</h3>
+          <p>Data modelling, security roles, business rules and relationships designed for growth and compliance.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> one trustworthy data model instead of many copies.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-azure" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3Z"/></svg></span>
+          <h3>Power Pages Portals</h3>
+          <p>External-facing portals for customers, partners and vendors, with authentication and controlled data access.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> self-service for people outside your tenant.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-violet" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span>
+          <h3>Power BI Analytics</h3>
+          <p>Dataset design, reports and dashboards that answer the questions leadership actually asks.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> decisions based on one agreed set of numbers.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="12" rx="3"/><path d="M12 7V4M8.5 13h.01M15.5 13h.01"/></svg></span>
+          <h3>Copilot Studio Agents</h3>
+          <p>Conversational agents grounded in your own content, with human-in-the-loop checkpoints where they matter.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> answers found in seconds instead of raised as tickets.</p>
+          <a class="card-link" href="services.html#ai">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-azure" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2.5h8a2 2 0 0 1 2 2V17a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2Z"/></svg></span>
+          <h3>SharePoint Online</h3>
+          <p>Intranets, communication portals, hub architecture, metadata and document management done properly.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> content people can actually find.</p>
+          <a class="card-link" href="services.html#collaboration">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-azure" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m8 6-6 6 6 6M16 6l6 6-6 6"/></svg></span>
+          <h3>SPFx Development</h3>
+          <p>Web parts, extensions, application customisers and command sets built to survive tenant updates.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> tailored SharePoint without unsupported hacks.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-azure" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="2.2"/><ellipse cx="12" cy="12" rx="10" ry="4.4"/><ellipse cx="12" cy="12" rx="10" ry="4.4" transform="rotate(60 12 12)"/><ellipse cx="12" cy="12" rx="10" ry="4.4" transform="rotate(120 12 12)"/></svg></span>
+          <h3>React &amp; TypeScript Development</h3>
+          <p>Type-safe, reusable component architecture with Fluent UI, testing and accessibility built in.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> code your team can extend without fear.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-azure" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="6" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="12" cy="18" r="2.5"/><path d="M7.8 7.6 10.8 15.8M16.2 7.6 13.2 15.8M8.5 6h7"/></svg></span>
+          <h3>Microsoft Graph &amp; PnP</h3>
+          <p>Graph API integration, PnPjs and PnP PowerShell for provisioning, automation and tenant operations.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> repeatable provisioning instead of manual setup.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M17.5 19a4.5 4.5 0 0 0 .5-8.97 6 6 0 0 0-11.6-1.4A4 4 0 0 0 6.5 19Z"/></svg></span>
+          <h3>Azure Integration</h3>
+          <p>Functions, Logic Apps, Service Bus, API Management, Key Vault and Application Insights.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> systems that talk to each other reliably.</p>
+          <a class="card-link" href="services.html#development">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 1.9 5.1L19 10l-5.1 1.9L12 17l-1.9-5.1L5 10l5.1-1.9Z"/><path d="M18 16.5 18.8 19l2.2.8-2.2.8L18 23l-.8-2.4-2.2-.8 2.2-.8Z"/></svg></span>
+          <h3>AI &amp; Intelligent Automation</h3>
+          <p>AI Builder, Azure AI services, document processing and retrieval-augmented knowledge assistants.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> less reading, sorting and rekeying by hand.</p>
+          <a class="card-link" href="services.html#ai">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3 4 6v6c0 4.5 3.4 8.3 8 9 4.6-.7 8-4.5 8-9V6Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+          <h3>Governance &amp; Center of Excellence</h3>
+          <p>Environment strategy, DLP policies, managed environments, ALM pipelines and a CoE operating model.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> citizen development you can safely say yes to.</p>
+          <a class="card-link" href="services.html#governance">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 6.5A2.5 2.5 0 0 1 5.5 4H11v16H5.5A2.5 2.5 0 0 0 3 22Z"/><path d="M21 6.5A2.5 2.5 0 0 0 18.5 4H13v16h5.5a2.5 2.5 0 0 1 2.5 2Z"/></svg></span>
+          <h3>Training &amp; Mentoring</h3>
+          <p>Instructor-led training, customised learning paths, architecture workshops and one-to-one mentoring.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> a team that no longer needs us for everyday work.</p>
+          <a class="card-link" href="training.html">Learn more</a>
+        </article>
+
+        <article class="card reveal">
+          <span class="card-icon v-teal" aria-hidden="true"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="3.4"/><path d="m14.4 9.6 3.4-3.4M6.2 17.8l3.4-3.4M14.4 14.4l3.4 3.4M6.2 6.2l3.4 3.4"/></svg></span>
+          <h3>Professional Job Support</h3>
+          <p>Technical mentoring, troubleshooting guidance, code review and interview preparation for working professionals.</p>
+          <p class="card-outcome"><strong>Outcome:</strong> unblock the problem and understand why it happened.</p>
+          <a class="card-link" href="job-support.html">Learn more</a>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. Technology ecosystem ==================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Technology ecosystem</span>
+        <h2>The stack we design, build and teach</h2>
+        <p>Depth across the Microsoft Cloud, from low-code through to custom development and integration.</p>
+      </div>
+
+      <div class="tech-group reveal">
+        <h3><span class="tech-dot dot-violet" aria-hidden="true"></span>Power Platform</h3>
+        <ul class="chip-set">
+          <li><span class="chip">Power Apps</span></li>
+          <li><span class="chip">Power Automate</span></li>
+          <li><span class="chip">Dataverse</span></li>
+          <li><span class="chip">Power Pages</span></li>
+          <li><span class="chip">Power BI</span></li>
+          <li><span class="chip">Copilot Studio</span></li>
+          <li><span class="chip">AI Builder</span></li>
+          <li><span class="chip">Power Platform Admin Center</span></li>
+          <li><span class="chip">CoE Starter Kit</span></li>
+        </ul>
+      </div>
+
+      <div class="tech-group reveal">
+        <h3><span class="tech-dot dot-azure" aria-hidden="true"></span>SharePoint &amp; Microsoft 365</h3>
+        <ul class="chip-set">
+          <li><span class="chip">SharePoint Online</span></li>
+          <li><span class="chip">Microsoft Teams</span></li>
+          <li><span class="chip">OneDrive</span></li>
+          <li><span class="chip">Microsoft Lists</span></li>
+          <li><span class="chip">Microsoft Forms</span></li>
+          <li><span class="chip">Adaptive Cards</span></li>
+          <li><span class="chip">Microsoft Graph</span></li>
+          <li><span class="chip">Microsoft Entra ID</span></li>
+        </ul>
+      </div>
+
+      <div class="tech-group reveal">
+        <h3><span class="tech-dot dot-primary" aria-hidden="true"></span>Development &amp; Integration</h3>
+        <ul class="chip-set">
+          <li><span class="chip">SPFx</span></li>
+          <li><span class="chip">React</span></li>
+          <li><span class="chip">TypeScript</span></li>
+          <li><span class="chip">Fluent UI</span></li>
+          <li><span class="chip">PnPjs</span></li>
+          <li><span class="chip">PnP PowerShell</span></li>
+          <li><span class="chip">Microsoft Graph API</span></li>
+          <li><span class="chip">REST APIs</span></li>
+          <li><span class="chip">Node.js</span></li>
+          <li><span class="chip">Azure Functions</span></li>
+          <li><span class="chip">Logic Apps</span></li>
+          <li><span class="chip">API Management</span></li>
+          <li><span class="chip">Key Vault</span></li>
+          <li><span class="chip">Service Bus</span></li>
+          <li><span class="chip">Application Insights</span></li>
+          <li><span class="chip">Azure DevOps</span></li>
+          <li><span class="chip">GitHub Actions</span></li>
+        </ul>
+      </div>
+
+      <div class="tech-group reveal">
+        <h3><span class="tech-dot dot-teal" aria-hidden="true"></span>AI</h3>
+        <ul class="chip-set">
+          <li><span class="chip">Copilot Studio</span></li>
+          <li><span class="chip">Azure AI services</span></li>
+          <li><span class="chip">AI Builder</span></li>
+          <li><span class="chip">Retrieval-Augmented Generation</span></li>
+          <li><span class="chip">Prompt engineering</span></li>
+          <li><span class="chip">AI agents</span></li>
+          <li><span class="chip">Intelligent document processing</span></li>
+          <li><span class="chip">Enterprise knowledge assistants</span></li>
+          <li><span class="chip">Responsible AI</span></li>
+        </ul>
+      </div>
+
+      <div class="notice notice-violet mt-lg">
+        <strong>On AI suitability.</strong> AI suitability, model availability, licensing, data residency,
+        and compliance requirements must be assessed for each organization and use case.
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. Business solutions ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Solution examples</span>
+        <h2>What organisations typically build with us</h2>
+        <p>Common business problems that map well to the Microsoft stack.</p>
+      </div>
+
+      <div class="grid grid-4">
+        <div class="list-card reveal">
+          <h3>People &amp; HR</h3>
+          <ul>
+            <li>Employee onboarding</li>
+            <li>Leave and attendance</li>
+            <li>Approval management</li>
+            <li>Help desk and service requests</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>Operations</h3>
+          <ul>
+            <li>Vendor onboarding</li>
+            <li>Contract management</li>
+            <li>Project tracking</li>
+            <li>Inspection and field service apps</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>Information</h3>
+          <ul>
+            <li>Document management</li>
+            <li>Knowledge management</li>
+            <li>Audit and compliance tracking</li>
+            <li>Executive dashboards</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>Customer &amp; AI</h3>
+          <ul>
+            <li>Customer and partner portals</li>
+            <li>Sales and opportunity management</li>
+            <li>AI-powered knowledge assistant</li>
+            <li>Intelligent document processing</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="notice mt-lg">
+        <strong>Please note.</strong> These are solution capabilities and worked examples of what the
+        platform supports. They are not descriptions of completed customer projects.
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. Why choose us ==================== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Why NextGen Consultants</span>
+        <h2>Built to be maintained, not just delivered</h2>
+        <p>The difference usually shows up six months after go-live.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="list-card reveal">
+          <h3>How we design</h3>
+          <ul>
+            <li>Architecture-first approach</li>
+            <li>Business-focused discovery</li>
+            <li>Security and governance by design</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>How we build</h3>
+          <ul>
+            <li>Low-code and pro-code expertise</li>
+            <li>Maintainable and reusable solutions</li>
+            <li>Responsible AI implementation</li>
+          </ul>
+        </div>
+        <div class="list-card reveal">
+          <h3>How we hand over</h3>
+          <ul>
+            <li>Clear technical documentation</li>
+            <li>Knowledge transfer as standard</li>
+            <li>Flexible support options</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. Delivery approach ==================== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Delivery approach</span>
+        <h2>Six steps from business challenge to supported solution</h2>
+        <p>You stay involved throughout — no long silences followed by a surprise demo.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step reveal">
+          <span class="step-num" aria-hidden="true">1</span>
+          <h3>Discover</h3>
+          <p>Understand the business problem, current process, constraints and success measures.</p>
+          <dl>
+            <dt>Output</dt><dd>Problem statement and scope outline</dd>
+            <dt>Your involvement</dt><dd>Workshop with process owners</dd>
+          </dl>
+        </div>
+        <div class="step reveal">
+          <span class="step-num" aria-hidden="true">2</span>
+          <h3>Assess</h3>
+          <p>Review existing systems, data, licensing position and integration points.</p>
+          <dl>
+            <dt>Output</dt><dd>Assessment findings and options</dd>
+            <dt>Your involvement</dt><dd>Access to relevant stakeholders</dd>
+          </dl>
+        </div>
+        <div class="step reveal">
+          <span class="step-num" aria-hidden="true">3</span>
+          <h3>Architect</h3>
+          <p>Design the solution, data model, security model, environments and integration approach.</p>
+          <dl>
+            <dt>Output</dt><dd>Solution architecture and delivery plan</dd>
+            <dt>Your involvement</dt><dd>Design review and sign-off</dd>
+          </dl>
+        </div>
+        <div class="step reveal">
+          <span class="step-num" aria-hidden="true">4</span>
+          <h3>Build</h3>
+          <p>Iterative development with regular demonstrations and early feedback.</p>
+          <dl>
+            <dt>Output</dt><dd>Working increments and documentation</dd>
+            <dt>Your involvement</dt><dd>Sprint reviews and feedback</dd>
+          </dl>
+        </div>
+        <div class="step reveal">
+          <span class="step-num" aria-hidden="true">5</span>
+          <h3>Validate &amp; Deploy</h3>
+          <p>Testing, accessibility checks, ALM pipelines and controlled release to production.</p>
+          <dl>
+            <dt>Output</dt><dd>Tested release and deployment pipeline</dd>
+            <dt>Your involvement</dt><dd>User acceptance testing</dd>
+          </dl>
+        </div>
+        <div class="step reveal">
+          <span class="step-num" aria-hidden="true">6</span>
+          <h3>Support &amp; Optimize</h3>
+          <p>Monitoring, performance tuning, enhancements and knowledge transfer to your team.</p>
+          <dl>
+            <dt>Output</dt><dd>Support model and handover pack</dd>
+            <dt>Your involvement</dt><dd>Agreed support and review cadence</dd>
+          </dl>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. Founders preview ==================== -->
+  <section class="section section-alt" id="founders">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">The team</span>
+        <h2>Two Minds. One Vision. Practical Technology Solutions.</h2>
+        <p>NextGen Consultants was founded by two experienced Microsoft technology professionals.</p>
+      </div>
+
+      <div class="founder-grid">
+        <article class="founder reveal">
+          <span class="founder-photo" aria-hidden="true">PHOTO<br />TO ADD</span>
+          <div>
+            <h3><span class="placeholder">Founder name to be supplied</span></h3>
+            <p class="role"><span class="placeholder">Role to be supplied</span></p>
+            <p>Professional biography, areas of expertise and certifications will appear here once supplied.</p>
+          </div>
+        </article>
+
+        <article class="founder reveal">
+          <span class="founder-photo" aria-hidden="true">PHOTO<br />TO ADD</span>
+          <div>
+            <h3><span class="placeholder">Founder name to be supplied</span></h3>
+            <p class="role"><span class="placeholder">Role to be supplied</span></p>
+            <p>Professional biography, areas of expertise and certifications will appear here once supplied.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="placeholder-note">
+        <strong>Note for the founders:</strong> names, biographies, photographs, certifications and
+        profile links are deliberately left blank rather than filled with invented detail.
+        Send them across and they will be added.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== 9. Training preview ==================== -->
+  <section class="section">
+    <div class="container split">
+      <div>
+        <span class="eyebrow">Training &amp; mentoring</span>
+        <h2>Learning that follows the same architecture-first thinking</h2>
+        <p class="muted">
+          We train individuals, corporate batches and whole delivery teams — with the same
+          emphasis on doing things in a way that still works at scale.
+        </p>
+        <div class="btn-row mt-lg">
+          <a class="btn btn-primary" href="training.html">Explore Training Programs</a>
+          <a class="btn btn-outline" href="job-support.html">Mentoring &amp; Job Support</a>
+        </div>
+      </div>
+
+      <div class="list-card reveal">
+        <h3>What we offer</h3>
+        <ul>
+          <li>Instructor-led training</li>
+          <li>Customized learning paths</li>
+          <li>Hands-on assignments</li>
+          <li>Architecture workshops</li>
+          <li>Interview preparation</li>
+          <li>Code and solution reviews</li>
+          <li>Corporate training</li>
+          <li>One-to-one mentoring</li>
+          <li>Professional job support</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 10. Final CTA ==================== -->
+  <section class="section section-dark cta-band">
+    <div class="container">
+      <h2>Let's Turn Your Business Challenge into a Scalable Microsoft Solution</h2>
+      <p>
+        Tell us what you are trying to build, improve or learn. A short discovery call is
+        usually enough to tell whether we are the right fit.
+      </p>
+      <div class="btn-row center">
+        <a class="btn btn-light" href="contact.html#book">Book a Consultation</a>
+        <a class="btn btn-on-dark" href="contact.html">Send Your Requirement</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">NG</span>
+          <span>NextGen Consultants</span>
+        </a>
+        <p>
+          Consulting, development, training and support for the Microsoft Cloud —
+          Power Platform, SharePoint Online, Microsoft 365, Azure and AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Services</h4>
+        <ul>
+          <li><a href="services.html#advisory">Advisory &amp; Architecture</a></li>
+          <li><a href="services.html#development">Application Development</a></li>
+          <li><a href="services.html#automation">Automation &amp; AI</a></li>
+          <li><a href="services.html#collaboration">SharePoint &amp; Collaboration</a></li>
+          <li><a href="services.html#governance">Governance &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Learning</h4>
+        <ul>
+          <li><a href="training.html">Training Programs</a></li>
+          <li><a href="training.html#corporate">Corporate Training</a></li>
+          <li><a href="job-support.html">Mentoring</a></li>
+          <li><a href="job-support.html">Job Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#book">Book a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> NextGen Consultants. All rights reserved.</p>
+      <p>Built with modern web technologies.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/site.js" defer></script>
 </body>
 </html>
