@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Contact &amp; Book a Consultation | NextGen Consultants</title>
+<meta name="description" content="Send a consulting, training, mentoring or corporate training enquiry, or book a free discovery call with NextGen Consultants." />
+<link rel="canonical" href="https://nextgenconsultants.github.io/contact.html" />
+
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://nextgenconsultants.github.io/contact.html" />
+<meta property="og:title" content="Contact &amp; Book a Consultation" />
+<meta property="og:description" content="Send an enquiry or book a free discovery call with NextGen Consultants." />
+<meta property="og:site_name" content="NextGen Consultants" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Contact — NextGen Consultants" />
+<meta name="twitter:description" content="Send an enquiry or book a free discovery call." />
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230f3d91'/%3E%3Ctext x='16' y='21' font-family='Segoe UI,Arial,sans-serif' font-size='12' font-weight='700' fill='%23fff' text-anchor='middle'%3ENG%3C/text%3E%3C/svg%3E" />
+<link rel="stylesheet" href="assets/css/site.css" />
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BreadcrumbList",
+  "itemListElement": [
+    { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://nextgenconsultants.github.io/" },
+    { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://nextgenconsultants.github.io/contact.html" }
+  ]
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="index.html">
+      <span class="brand-mark" aria-hidden="true">NG</span>
+      <span>NextGen Consultants</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" type="button" aria-expanded="false" aria-controls="navMenu">
+      <span class="sr-only">Toggle navigation menu</span>
+      <span class="bars" aria-hidden="true"></span>
+    </button>
+
+    <ul class="nav-menu" id="navMenu">
+      <li><a class="nav-link" href="index.html">Home</a></li>
+      <li><a class="nav-link" href="services.html">Services</a></li>
+      <li><a class="nav-link" href="training.html">Training</a></li>
+      <li><a class="nav-link" href="job-support.html">Job Support</a></li>
+      <li><a class="nav-link" href="about.html">About</a></li>
+      <li><a class="nav-link" href="contact.html">Contact</a></li>
+      <li class="nav-cta"><a class="btn btn-primary btn-sm" href="contact.html#book">Book a Consultation</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="main">
+
+  <section class="page-head">
+    <div class="container">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <ol>
+          <li><a href="index.html">Home</a></li>
+          <li aria-current="page">Contact</li>
+        </ol>
+      </nav>
+      <h1>Get in touch</h1>
+      <p>
+        Tell us what you are trying to build, improve or learn. A short description is enough
+        to start — we will come back with questions rather than a generic proposal.
+      </p>
+    </div>
+  </section>
+
+  <!-- ==================== Form and details ==================== -->
+  <section class="section">
+    <div class="container split">
+
+      <!-- Enquiry form -->
+      <div>
+        <span class="eyebrow">Send an enquiry</span>
+        <h2>Tell us about your requirement</h2>
+        <p class="muted">Fields marked with an asterisk are required.</p>
+
+        <!-- Remove this notice once CONFIG.formEndpoint is set in
+             assets/js/site.js. Telling people up front beats letting them
+             type a long enquiry and only then discover it cannot send. -->
+        <div class="placeholder-note" style="margin-top:18px">
+          <strong>This form is not connected yet.</strong> Submissions cannot be delivered until
+          the Power Automate flow is in place. Contact details are being finalised and will be
+          published here shortly.
+        </div>
+
+        <form class="form-card mt-lg" id="inquiryForm" novalidate>
+          <div class="form-grid">
+
+            <div class="form-row">
+              <div class="field">
+                <label for="name">Full name <span class="req" aria-hidden="true">*</span></label>
+                <input type="text" id="name" name="name" autocomplete="name" required />
+                <p class="field-error" data-error-for="name"></p>
+              </div>
+
+              <div class="field">
+                <label for="email">Business email <span class="req" aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" autocomplete="email" required />
+                <p class="field-error" data-error-for="email"></p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" />
+                <p class="hint">Optional</p>
+              </div>
+
+              <div class="field">
+                <label for="organisation">Organisation</label>
+                <input type="text" id="organisation" name="organisation" autocomplete="organization" />
+                <p class="hint">Optional</p>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="field">
+                <label for="country">Country <span class="req" aria-hidden="true">*</span></label>
+                <select id="country" name="country" required>
+                  <option value="">Please select…</option>
+                  <option>India</option>
+                  <option>United States</option>
+                  <option>United Kingdom</option>
+                  <option>Canada</option>
+                  <option>Australia</option>
+                  <option>United Arab Emirates</option>
+                  <option>Singapore</option>
+                  <option>Germany</option>
+                  <option>Netherlands</option>
+                  <option>Other</option>
+                </select>
+                <p class="field-error" data-error-for="country"></p>
+              </div>
+
+              <div class="field">
+                <label for="inquiryType">Inquiry type <span class="req" aria-hidden="true">*</span></label>
+                <select id="inquiryType" name="inquiryType" required>
+                  <option value="">Please select…</option>
+                  <option>Consulting</option>
+                  <option>Training</option>
+                  <option>Mentoring or job support</option>
+                  <option>Corporate training</option>
+                  <option>Partnership</option>
+                  <option>General</option>
+                </select>
+                <p class="field-error" data-error-for="inquiryType"></p>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="technologies">Technologies involved</label>
+              <input type="text" id="technologies" name="technologies" placeholder="Power Apps, SharePoint Online, SPFx…" />
+              <p class="hint">Optional — helps us route your enquiry to the right person</p>
+            </div>
+
+            <div class="field">
+              <label for="message">Your requirement <span class="req" aria-hidden="true">*</span></label>
+              <textarea id="message" name="message" rows="5" required></textarea>
+              <p class="field-error" data-error-for="message"></p>
+            </div>
+
+            <!-- Honeypot: hidden from people, catches naive bots. Positioned
+                 off-screen rather than display:none, and out of the tab order. -->
+            <div class="hp-field" aria-hidden="true">
+              <label for="website">Leave this field empty</label>
+              <input type="text" id="website" name="website" tabindex="-1" autocomplete="off" />
+            </div>
+
+            <div class="field checkbox-field">
+              <input type="checkbox" id="consent" name="consent" required />
+              <label for="consent">
+                I agree to NextGen Consultants contacting me about this enquiry.
+                <span class="req" aria-hidden="true">*</span>
+              </label>
+            </div>
+            <p class="field-error" data-error-for="consent"></p>
+
+            <button type="submit" class="btn btn-primary">Send Enquiry</button>
+            <output class="form-status" id="formStatus" for="inquiryForm"></output>
+          </div>
+        </form>
+
+        <div class="notice notice-teal mt-lg">
+          <strong>Please do not send us:</strong> passwords or credentials, tenant administrator
+          details, production data, customer personal data, proprietary source code, or
+          identification documents. We do not need any of it to respond to an enquiry.
+        </div>
+      </div>
+
+      <!-- Contact details -->
+      <div>
+        <span class="eyebrow">Contact details</span>
+        <h2>Other ways to reach us</h2>
+
+        <dl class="contact-list mt-lg">
+          <div>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+            </span>
+            <div>
+              <dt>Email</dt>
+              <dd><span class="placeholder">to be supplied</span></dd>
+            </div>
+          </div>
+
+          <div>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1 1 .4 1.9.7 2.8a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.3-1.2a2 2 0 0 1 2.1-.5c.9.3 1.8.6 2.8.7a2 2 0 0 1 1.7 2Z"/></svg>
+            </span>
+            <div>
+              <dt>Phone</dt>
+              <dd><span class="placeholder">to be supplied</span></dd>
+            </div>
+          </div>
+
+          <div>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M3 12h18M12 3c2.5 2.7 3.8 5.8 3.8 9S14.5 18.3 12 21c-2.5-2.7-3.8-5.8-3.8-9S9.5 5.7 12 3Z"/></svg>
+            </span>
+            <div>
+              <dt>Service region</dt>
+              <dd>India and international, delivered remotely</dd>
+            </div>
+          </div>
+
+          <div>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            </span>
+            <div>
+              <dt>Business hours</dt>
+              <dd><span class="placeholder">to be supplied</span></dd>
+            </div>
+          </div>
+
+          <div>
+            <span class="ci" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="14" rx="2"/><path d="M8 21h8M12 18v3"/></svg>
+            </span>
+            <div>
+              <dt>Meetings</dt>
+              <dd>Online, scheduled around your time zone</dd>
+            </div>
+          </div>
+        </dl>
+
+        <div class="list-card reveal mt-lg">
+          <h3>What happens next</h3>
+          <ul>
+            <li>We read your enquiry and come back with questions</li>
+            <li>A short discovery call, usually 30 minutes</li>
+            <li>An honest answer on whether we are the right fit</li>
+            <li>If yes, a scoped proposal — if no, a pointer to someone better placed</li>
+          </ul>
+        </div>
+
+        <p class="placeholder-note">
+          <strong>Response time:</strong> we aim to reply within two business days. Exact
+          availability is <span class="placeholder">to be confirmed</span>.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ==================== Book a consultation ==================== -->
+  <section class="section section-alt" id="book">
+    <div class="container">
+      <div class="section-head">
+        <span class="eyebrow">Book a consultation</span>
+        <h2>Pick the conversation that fits</h2>
+        <p>Choose the session that matches where you are.</p>
+      </div>
+
+      <div class="grid grid-3">
+        <div class="list-card reveal">
+          <h3>30-minute discovery call</h3>
+          <p class="muted mb-0">A first conversation about your requirement and whether we can help. No charge.</p>
+        </div>
+        <div class="list-card reveal">
+          <h3>Architecture consultation</h3>
+          <p class="muted mb-0">A working session on a specific design, with concrete recommendations.</p>
+        </div>
+        <div class="list-card reveal">
+          <h3>Technical troubleshooting</h3>
+          <p class="muted mb-0">A focused session on a problem you are currently stuck on.</p>
+        </div>
+        <div class="list-card reveal">
+          <h3>Training consultation</h3>
+          <p class="muted mb-0">Discuss learning goals and which track fits your team or your career.</p>
+        </div>
+        <div class="list-card reveal">
+          <h3>Career mentoring</h3>
+          <p class="muted mb-0">Skill-gap assessment and a realistic roadmap for the role you want next.</p>
+        </div>
+        <div class="list-card reveal">
+          <h3>Corporate training scoping</h3>
+          <p class="muted mb-0">Training needs assessment for a team or department.</p>
+        </div>
+      </div>
+
+      <!-- Microsoft Bookings embed goes here. Replace this block with the
+           published Bookings page iframe:
+
+           <iframe src="https://outlook.office365.com/owa/calendar/<booking-page>/bookings/"
+                   width="100%" height="820" style="border:0"
+                   title="Book a consultation"></iframe>
+
+           Until that page exists, the enquiry form above is the way in —
+           rather than showing a booking widget that cannot take a booking. -->
+      <div class="placeholder-note mt-lg">
+        <strong>Online booking is not connected yet.</strong> A Microsoft Bookings page will be
+        embedded here so you can pick a slot directly. In the meantime, send the form above with
+        your preferred times and time zone, and we will confirm by email.
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== FAQ ==================== -->
+  <section class="section">
+    <div class="container container-narrow">
+      <div class="section-head center">
+        <span class="eyebrow">Before you write</span>
+        <h2>Frequently asked</h2>
+      </div>
+
+      <div class="accordion">
+        <details>
+          <summary>What should I include in my enquiry?</summary>
+          <div class="acc-body">The business problem, roughly what you have tried or already have in place, and any deadline. Technical detail is welcome but not required — we can work that out on the call.</div>
+        </details>
+        <details>
+          <summary>Is the discovery call really free?</summary>
+          <div class="acc-body">Yes. It is how we both work out whether the engagement makes sense. If it does not, we will say so.</div>
+        </details>
+        <details>
+          <summary>Do you sign NDAs?</summary>
+          <div class="acc-body">Yes, where an engagement requires it. Please do not send confidential material with an initial enquiry, though — a general description is enough at that stage.</div>
+        </details>
+        <details>
+          <summary>Can you work in our time zone?</summary>
+          <div class="acc-body">We work with clients in India and internationally and schedule around your availability. Tell us your time zone and preferred times.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-about">
+        <a class="brand" href="index.html">
+          <span class="brand-mark" aria-hidden="true">NG</span>
+          <span>NextGen Consultants</span>
+        </a>
+        <p>
+          Consulting, development, training and support for the Microsoft Cloud —
+          Power Platform, SharePoint Online, Microsoft 365, Azure and AI.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h3>Services</h3>
+        <ul>
+          <li><a href="services.html#advisory">Advisory &amp; Architecture</a></li>
+          <li><a href="services.html#development">Application Development</a></li>
+          <li><a href="services.html#automation">Automation &amp; AI</a></li>
+          <li><a href="services.html#collaboration">SharePoint &amp; Collaboration</a></li>
+          <li><a href="services.html#governance">Governance &amp; Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Learning</h3>
+        <ul>
+          <li><a href="training.html">Training Programs</a></li>
+          <li><a href="training.html#corporate">Corporate Training</a></li>
+          <li><a href="job-support.html">Mentoring</a></li>
+          <li><a href="job-support.html">Job Support</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h3>Company</h3>
+        <ul>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="contact.html#book">Book a Consultation</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>&copy; <span id="year">2026</span> NextGen Consultants. All rights reserved.</p>
+      <p>Built with modern web technologies.</p>
+    </div>
+  </div>
+</footer>
+
+<button class="to-top" id="toTop" type="button" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 14 6-6 6 6"/></svg>
+</button>
+
+<script src="assets/js/site.js" defer></script>
+</body>
+</html>

@@ -287,11 +287,16 @@
       };
 
       // No endpoint configured yet — be honest rather than pretend to send.
+      // Never point the visitor at another route that is also not live.
       if (!CONFIG.formEndpoint) {
-        var where = CONFIG.fallbackEmail
-          ? "email us at " + CONFIG.fallbackEmail
-          : "use the booking link above";
-        say("This form is not connected yet. Please " + where + " and we will respond.", "is-error");
+        say(
+          CONFIG.fallbackEmail
+            ? "This form is not connected yet. Please email us at " +
+                CONFIG.fallbackEmail + " and we will respond."
+            : "This form is not connected yet, so your message has not been sent. " +
+                "Please check back shortly.",
+          "is-error"
+        );
         return;
       }
 
