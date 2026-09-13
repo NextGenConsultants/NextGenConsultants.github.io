@@ -312,19 +312,12 @@
         </div>
       </div>
 
-      <!-- Microsoft Bookings embed goes here. Replace this block with the
-           published Bookings page iframe:
-
-           <iframe src="https://outlook.office365.com/owa/calendar/<booking-page>/bookings/"
-                   width="100%" height="820" style="border:0"
-                   title="Book a consultation"></iframe>
-
-           Until that page exists, the enquiry form above is the way in —
-           rather than showing a booking widget that cannot take a booking. -->
-      <div class="placeholder-note mt-lg">
-        <strong>Online booking is not connected yet.</strong> A Microsoft Bookings page will be
-        embedded here so you can pick a slot directly. In the meantime, send the form above with
-        your preferred times and time zone, and we will confirm by email.
+      <div class="booking-embed mt-lg">
+        <iframe
+          src="https://bookings.cloud.microsoft/book/NextGenConsultants@them365dev.onmicrosoft.com/?ismsaljsauthenabled=true"
+          width="100%" height="820" style="border:0"
+          loading="lazy"
+          title="Book a consultation with NextGen Consultants"></iframe>
       </div>
     </div>
   </section>

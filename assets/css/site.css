@@ -778,6 +778,15 @@ strong { font-weight: 650; color: var(--text); }
 .form-status.is-ok { color: var(--success); }
 .form-status.is-error { color: var(--danger); }
 
+.booking-embed {
+  overflow: hidden;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow);
+}
+.booking-embed iframe { display: block; }
+
 /* --------------------------------------------------------------------------
    14. Contact details block
    -------------------------------------------------------------------------- */

@@ -162,16 +162,13 @@ Payload posted as JSON:
 > regenerated if it is ever abused. If you would rather have zero abuse surface, embed
 > Microsoft Forms instead and drop the custom form.
 
-### Connecting online booking
+### Online booking
 
-[`contact.html`](contact.html) has a `#book` section with a commented-out iframe template.
-Publish a Microsoft Bookings page, then replace the placeholder notice with:
-
-```html
-<iframe src="https://outlook.office365.com/owa/calendar/<booking-page>/bookings/"
-        width="100%" height="820" style="border:0"
-        title="Book a consultation"></iframe>
-```
+[`contact.html`](contact.html) embeds the Microsoft Bookings page directly in the `#book`
+section, inside a `.booking-embed` iframe wrapper. Every "Book a Consultation" link across
+the site points at `contact.html#book`, so the calendar itself lives in one place rather
+than being duplicated per page. To point it at a different Bookings page, update the
+`iframe src` in `contact.html`.
 
 ---
 
@@ -183,7 +180,7 @@ Microsoft 365 — which adds no new vendor, since the accounts already exist.
 | Need | Solution | Status |
 |---|---|---|
 | Enquiries | Branded form → Power Automate HTTP trigger | Not connected |
-| Booking | Microsoft Bookings embed | Not connected |
+| Booking | Microsoft Bookings embed | Connected |
 | Analytics | Microsoft Clarity, consent-gated | Not added |
 
 ---
